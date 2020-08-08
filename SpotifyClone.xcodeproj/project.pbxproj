@@ -13,6 +13,10 @@
 		4EDFCEBE24DF303500CE4E9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDFCEBC24DF303500CE4E9B /* Main.storyboard */; };
 		4EDFCEC024DF303700CE4E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EDFCEBF24DF303700CE4E9B /* Assets.xcassets */; };
 		4EDFCEC324DF303700CE4E9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EDFCEC124DF303700CE4E9B /* LaunchScreen.storyboard */; };
+		4EDFCECB24DF308200CE4E9B /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDFCECA24DF308200CE4E9B /* Song.swift */; };
+		4EDFCECD24DF30D400CE4E9B /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDFCECC24DF30D400CE4E9B /* Album.swift */; };
+		4EDFCECF24DF318C00CE4E9B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDFCECE24DF318C00CE4E9B /* Category.swift */; };
+		4EDFCED324DF322100CE4E9B /* CatagoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDFCED224DF322100CE4E9B /* CatagoryService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		4EDFCEBF24DF303700CE4E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EDFCEC224DF303700CE4E9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EDFCEC424DF303700CE4E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EDFCECA24DF308200CE4E9B /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		4EDFCECC24DF30D400CE4E9B /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		4EDFCECE24DF318C00CE4E9B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		4EDFCED224DF322100CE4E9B /* CatagoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatagoryService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,49 @@
 			children = (
 				4EDFCEB624DF303500CE4E9B /* AppDelegate.swift */,
 				4EDFCEB824DF303500CE4E9B /* SceneDelegate.swift */,
-				4EDFCEBA24DF303500CE4E9B /* ViewController.swift */,
-				4EDFCEBC24DF303500CE4E9B /* Main.storyboard */,
+				4EDFCED524DF32DD00CE4E9B /* Controller */,
+				4EDFCED424DF32CF00CE4E9B /* View */,
+				4EDFCED024DF320200CE4E9B /* Model */,
 				4EDFCEBF24DF303700CE4E9B /* Assets.xcassets */,
-				4EDFCEC124DF303700CE4E9B /* LaunchScreen.storyboard */,
 				4EDFCEC424DF303700CE4E9B /* Info.plist */,
 			);
 			path = SpotifyClone;
+			sourceTree = "<group>";
+		};
+		4EDFCED024DF320200CE4E9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4EDFCED124DF321100CE4E9B /* Service */,
+				4EDFCECA24DF308200CE4E9B /* Song.swift */,
+				4EDFCECC24DF30D400CE4E9B /* Album.swift */,
+				4EDFCECE24DF318C00CE4E9B /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4EDFCED124DF321100CE4E9B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4EDFCED224DF322100CE4E9B /* CatagoryService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4EDFCED424DF32CF00CE4E9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EDFCEBC24DF303500CE4E9B /* Main.storyboard */,
+				4EDFCEC124DF303700CE4E9B /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4EDFCED524DF32DD00CE4E9B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4EDFCEBA24DF303500CE4E9B /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EDFCED324DF322100CE4E9B /* CatagoryService.swift in Sources */,
+				4EDFCECD24DF30D400CE4E9B /* Album.swift in Sources */,
+				4EDFCECB24DF308200CE4E9B /* Song.swift in Sources */,
 				4EDFCEBB24DF303500CE4E9B /* ViewController.swift in Sources */,
 				4EDFCEB724DF303500CE4E9B /* AppDelegate.swift in Sources */,
 				4EDFCEB924DF303500CE4E9B /* SceneDelegate.swift in Sources */,
+				4EDFCECF24DF318C00CE4E9B /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
