@@ -8,8 +8,14 @@
 
 import Foundation
 class CategoryService {
-   static let shared = CategoryService()
-    private init() {}
+    static let shared = CategoryService()
     
-    let category: [Category]
+    let categories: [Category]
+    
+    private init() {
+        let categoriesUrl = Bundle.main.url(forResource: "categories", withExtension: "json")!
+        let data = try! Data(contentsOf: categoriesUrl)
+        let decoder = JSONDecoder()
+        categories = try! decoder.decode([Category].self, from: data)
+    }
 }
