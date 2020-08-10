@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="290" id="aS7-4c-iKY">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="290" id="aS7-4c-iKY" customClass="CategoryCell" customModule="SpotifyClone" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="290"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aS7-4c-iKY" id="eN7-JP-o00">
@@ -57,7 +57,7 @@
                                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                             </collectionViewFlowLayout>
                                                             <cells>
-                                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1nT-YW-7mB">
+                                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1nT-YW-7mB" customClass="AlbumCell" customModule="SpotifyClone" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="160" height="199"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="nZ1-mR-aG6">
@@ -97,6 +97,11 @@
                                                                         </constraints>
                                                                     </collectionViewCellContentView>
                                                                     <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                    <connections>
+                                                                        <outlet property="artistsNameLabel" destination="pyb-5p-1Tb" id="zX0-hz-xl4"/>
+                                                                        <outlet property="thumbnailImageView" destination="jPu-3j-vfX" id="iXZ-U4-Sli"/>
+                                                                        <outlet property="titleLabel" destination="84Q-Ch-PMP" id="TGK-Cg-lyr"/>
+                                                                    </connections>
                                                                 </collectionViewCell>
                                                             </cells>
                                                         </collectionView>
@@ -111,6 +116,11 @@
                                                 <constraint firstItem="AwW-J0-bP9" firstAttribute="top" secondItem="eN7-JP-o00" secondAttribute="top" id="yGQ-f5-5pQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="kag-gl-UAD" id="zZC-1a-vsJ"/>
+                                            <outlet property="subTitleLabel" destination="Czv-Kg-MJy" id="GjV-sZ-mVA"/>
+                                            <outlet property="titleLabel" destination="aQl-e9-rbI" id="xc9-OV-Mtm"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
